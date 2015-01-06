@@ -1,0 +1,27 @@
+{  
+  "this_year": {
+    "status": 200,
+    "holidays": {
+      "2015-01-01": [
+        {
+          "name": "New Year\u2019s Day",
+          "country": "US",
+          "date": "2015-01-01"
+        }
+      ]
+    }
+  },
+
+  "next_year": {
+    "status": 200,
+    "holidays": {
+      "2016-01-01": [
+        {
+          "name": "New Year\u2019s Day",
+          "country": "US",
+          "date": "2016-01-01"
+        }
+      ]
+    }
+  }
+}

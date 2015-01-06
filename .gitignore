@@ -1,0 +1,42 @@
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+*.bundle
+*.so
+*.o
+*.a
+mkmf.log
+
+# For MacOS:
+#
+.DS_Store
+
+# For TextMate
+*.tmproj
+tmtags
+
+# For emacs:
+#*~
+#\#*
+#.\#*
+
+# For vim:
+#*.swp
+
+# For redcar:
+#.redcar
+
+# For rubinius:
+#*.rbc
+
+# Ruby managers
+.rvmrc
+.ruby-version
+
+.rspec
