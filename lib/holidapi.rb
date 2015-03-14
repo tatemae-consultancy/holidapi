@@ -5,19 +5,19 @@ require 'holidapi/version'
 
 module HolidApi
   include HTTParty
-  
+
   # Set the base_uri for HTTParty
   base_uri 'http://holidayapi.com/v1'
 
   # Set headers for HTTParty
-  headers({ 
+  headers({
     'User-Agent' => "ruby-holidapi-#{VERSION}",
     'Content-Type' => 'application/json; charset=utf-8',
     'Accept-Encoding' => 'gzip, deflate'
   })
 
   class << self
-    
+
     # Get the holidays from the API.
     # Default country: "US"
     # Default year: Time.now.year
@@ -48,7 +48,7 @@ module HolidApi
     def handle_response(response)
       case response.code.to_i
       when 200
-        JSON.parse(response)['holidays']
+        JSON.parse(response.body)['holidays']
       when 400
         raise BadRequest.new response.parsed_response
       when 401
